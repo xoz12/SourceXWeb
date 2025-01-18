@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - SourceX</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="hero">
+        <div class="background-box">
+            <h1 class="animated-title">Welcome to SourceX</h1>
+        </div>
+    </header>
+
+    <main>
+        <section class="section">
+            <h2>Login</h2>
+            <p class="fade-in">Please log in to access the site.</p>
+            <form id="login-form" class="fade-in">
+                <div class="form-group">
+                    <label for="email">Gmail:</label>
+                    <input type="email" id="email" placeholder="Enter your Gmail" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" placeholder="Enter your password" required>
+                </div>
+                <button type="button" id="send-code-btn">Send Verification Code</button>
+            </form>
+
+            <form id="verification-form" class="hidden fade-in">
+                <div class="form-group">
+                    <label for="verification-code">Enter Verification Code:</label>
+                    <input type="text" id="verification-code" placeholder="6-digit code" required>
+                </div>
+                <button type="button" id="verify-btn">Verify and Login</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 SourceX. All Rights Reserved.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
